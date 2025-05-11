@@ -232,3 +232,40 @@ body::after {
         --light: #deb953;
     }
 }
+@keyframes shake {
+    5%,
+    26% {
+    transform: rotate(-2.5deg);
+    }
+    33%,
+    41% {
+    transform: rotate(-.5deg);
+    }
+    48%,
+    69% {
+    transform: rotate(2.5deg);
+    }
+    80%,
+    95% {
+    transform: rotate(.5deg);
+    }
+}
+@keyframes car {
+    15%,
+    23% {
+    transform: translate3d(-2.3em, 0, 0);
+    }
+    36%,
+    42% {
+    transform: translate3d(-.8em, 0, 0);
+    }
+    61%,
+    71.5% {
+    transform: translate3d(2.8em, 0, 0);
+    }
+    81%,
+    88% {
+    transform: translate3d(1.5em, 0, 0);
+    }
+}
+    
