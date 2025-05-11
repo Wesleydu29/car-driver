@@ -191,3 +191,21 @@ body::after {
     11.7% 92.6%,
     88.3% 92.6%;
 }
+@keyframes line {
+    100% {
+        background-position: center 100%;
+    }
+}
+@keyframes move-road {
+    0% {
+        transform: perspective(311px) rotateX(83deg) translate3d(var(--n-road), -11.975em, 0);
+    }
+    25%, 
+    50% {
+        transform: perspective(311px) rotateX(83deg) translate3d(var(--p-road), -11.975em, 0);
+    }
+    75%,
+    100% {
+        transform: perspective(311px) rotateX(83deg) translate3d(var(--n-road), -11.975em, 0);
+    }
+}
