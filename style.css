@@ -91,6 +91,7 @@ body::after {
     top: calc(50% - 8.8em);
     left: calc(50% - 7.6em);
     background-repeat: no-repeat;
+    animation: light 2s linear infinite, shake 3.5s linear infinite;
     background-image: 
     radial-gradient(58em 20em at 50% 215%, transparent 20%, var(--white) 20.5%, var(--white) 20.8%, var(--green) 21.5%),
     radial-gradient(circle at center 100%, var(--black) 30%, transparent 0),
@@ -207,5 +208,27 @@ body::after {
     75%,
     100% {
         transform: perspective(311px) rotateX(83deg) translate3d(var(--n-road), -11.975em, 0);
+    }
+}
+@keyframes light {
+    0%, 
+    35% {
+        --light:#fbfbfb;
+    }
+    50% {
+        --light: #deb953;
+    }
+    60% {
+        --light: #fbfbfb;
+    }
+    65% {
+        --light: #deb953;
+    }
+    95% {
+        --light: #fbfbfb;
+    }
+    
+    100% {
+        --light: #deb953;
     }
 }
